@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <div style="display: flex;">
+
+      <!-- <ion-icon class="back-arrow" name="arrow-back-circle"></ion-icon>-->
+      <ion-button (click)="goBackToPageTab1()" size="small" fill="clear" style="margin-left: 0; margin-right: 0px;">
+        <ion-icon class="back-arrow" name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-title class="title"> Toute la Tunisie </ion-title>
+
+    </div>
+
+
+    <ion-text class="trouver">200220 trouvées</ion-text>
+
+    <hr color="#eef2f3" style="margin-bottom: -2px;">
+
+    <div class="secondFloor">
+
+      <ion-button color="dark" fill="clear">
+
+        <ion-icon class="map" name="filter-outline"></ion-icon>
+        <ion-text class="m1"> Filtre</ion-text>
+      </ion-button>
+
+      <ion-button class="b2" color="dark" fill="clear">
+        <ion-icon class="trier" name="swap-vertical"></ion-icon>
+        <ion-text class="t1">Trier par</ion-text>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let flatmate of flatmates">
+
+
+    <img src="{{flatmate.imageUrl}}" />
+
+
+
+
+    <ion-item>
+      <ion-icon name="woman-outline" slot="start"></ion-icon>
+      <ion-label>{{flatmate.name}}</ion-label>
+      <ion-item lines="none">
+        <ion-icon name="school-outline" slot="start"></ion-icon>
+        <ion-label>{{flatmate.status}}</ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="search-circle-outline" slot="start"></ion-icon>
+      <ion-label>{{flatmate.text}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>{{flatmate.place}}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+      <ion-label>{{flatmate.budget}} DT</ion-label>
+    </ion-item>
+
+
+  </ion-card>
+
+
+
+</ion-content>

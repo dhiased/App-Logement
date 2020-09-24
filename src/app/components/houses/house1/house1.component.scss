@@ -1,0 +1,110 @@
+ion-toolbar {
+    --background: #F7F7FA;
+}
+
+
+.back-arrow {
+    color: #1280ee;
+    margin-left: 0px;
+    font-size: 25px;
+
+}
+
+
+.triplePoints {
+
+    color: #1280ee;
+
+    font-size: 25px;
+
+    margin-top: 5px;
+
+
+}
+
+.title-1 {
+
+    padding: 20px;
+    margin-bottom: -10px;
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato',
+        sans-serif;
+
+
+}
+
+
+.img-box {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 45px;
+    width: 45px;
+}
+
+.border-white {
+    border: white solid 4px;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: start;
+    margin-top: -10px;
+    padding: 20px;
+}
+
+.subtitle-1 {
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+
+}
+
+.description {
+    padding-left: 20px;
+
+
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato',
+        sans-serif;
+}
+
+.descriptionSubtitle {
+    padding: 20px;
+    font-family: "modelica",
+        sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
+}
+
+
+.carte {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+span {
+
+    color: #808080;
+    font-weight: bold;
+
+}
+
+.icon-carac {
+    width: 36px;
+    height: 36px;
+}

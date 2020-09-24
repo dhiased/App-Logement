@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <div style="display: flex;">
+
+      <!-- <ion-icon class="back-arrow" name="arrow-back-circle"></ion-icon>-->
+      <ion-button (click)="goBackToPageTab1()" size="small" fill="clear" style="margin-left: 0; margin-right: 0px;">
+        <ion-icon class="back-arrow" name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-title class="title"> Toute la Tunisie </ion-title>
+      <ion-button fill="clear">
+        <ion-icon class="options" name="options"></ion-icon>
+        <ion-text class="filtre">Filtre</ion-text>
+      </ion-button>
+    </div>
+
+
+    <ion-text class="trouver">306 trouvées</ion-text>
+
+    <hr color="#eef2f3" style="margin-bottom: -2px;">
+
+    <div class="secondFloor" style="display: flex;     ">
+
+      <ion-button (click)="goToListPage()" color="dark" fill="clear">
+        <ion-icon class="list" name="list-outline"></ion-icon>
+        <ion-text class="m1"> Liste</ion-text>
+      </ion-button>
+
+      <ion-button class="b2" color="dark" fill="clear">
+        <ion-icon class="trier" name="swap-vertical"></ion-icon>
+        <ion-text class="t1">Trier par</ion-text>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div #map id="map"></div>
+
+</ion-content>

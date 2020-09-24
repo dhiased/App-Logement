@@ -1,0 +1,146 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <div style="display: flex; justify-content: space-between;">
+
+      <!-- <ion-icon class="back-arrow" name="arrow-back-circle"></ion-icon>-->
+      <ion-button (click)="closeModal()" size="small" fill="clear" style="margin-left: 0; margin-right: 0px;">
+        <ion-icon class="back-arrow" name="close-outline"></ion-icon>
+      </ion-button>
+
+
+
+
+
+      <!-- <ion-icon class="triplePoints" style=" color: #1280ee;" slot=" end" ios="ellipsis-vertical"
+        md="ellipsis-vertical"></ion-icon>-->
+      <ion-icon name="arrow-redo-outline" class="triplePoints" style=" color: #1280ee; margin-right: 15px;" slot=" end">
+      </ion-icon>
+
+
+    </div>
+
+
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <!-- <ion-slides> 
+    <ion-slide> -->
+  <ion-card>
+
+
+    <ion-slides style="margin-bottom: -30px;">
+
+
+      <ion-slide *ngFor="let pic of house.imagesUrls">
+        <img src="{{pic}}" />
+
+      </ion-slide> <!-- -->
+
+    </ion-slides>
+
+
+  </ion-card>
+  <ion-icon name="camera-outline" style="margin-left: 10px; font-size: 20px;"></ion-icon>
+  <ion-icon name="images-outline" style=" font-size: 20px;"></ion-icon>
+
+  <div>
+    <ion-card-title class="title-1">{{house.title}}</ion-card-title>
+
+
+    <hr color="#eef2f3" style="margin-bottom: -10px;" class="ion-margin">
+
+    <div class="flex">
+
+      <div class="border-white">
+        <div class="img-box">
+          <img src="{{house.owerPic}}">
+        </div>
+      </div>
+
+
+
+      <ion-card-subtitle class="subtitle-1">{{house.ownerFirstName}}<br>{{house.ownerLastName}}</ion-card-subtitle>
+
+    </div>
+
+    <hr color="#eef2f3" style="margin-top: -10px; margin-bottom: 25px;" class="ion-margin">
+
+    <ion-card-subtitle color="dark" class="description">Description</ion-card-subtitle>
+    <!--
+  <ion-card-subtitle class="descriptionSubtitle"> Grand et lumineux appartement situé à Borj Louzir, à 2 min à pied de
+    la
+    Bank BIAT, très bien desservie avec le Taxi. Nous sommes 3
+    colocataires qui combinent travail tout en étudiant. Nous aimons que l'appartement ait une bonne ambiance et puisse
+    être déconnecté si nécessaire.</ion-card-subtitle> -->
+
+    <ion-card-subtitle class="descriptionSubtitle">{{house.description}}</ion-card-subtitle>
+
+    <ion-card-subtitle color="dark" class="description">Prix</ion-card-subtitle>
+    <ion-card-subtitle class="descriptionSubtitle">
+      <span>Loyer mensuel: </span> <b>{{house.price}} DT</b><br>
+      <span>Caution: </span><b>{{house.caution}} DT</b>
+    </ion-card-subtitle>
+
+
+
+
+    <ion-card-subtitle color="dark" class="description">Charges</ion-card-subtitle>
+    <ion-card-subtitle class="descriptionSubtitle">
+      <span>Electricité: </span><b>{{house.electricite}}</b> {{house.payer}}<br>
+      <span> Eau: </span><b>{{house.eau}}</b><br>
+      <span>Gaz: </span><b>{{house.gaz}}</b><br>
+
+    </ion-card-subtitle>
+
+    <ion-card-subtitle color="dark" class="description">Carte</ion-card-subtitle>
+
+    <img class="carte" src="{{house.carte}}" />
+
+
+    <ion-card-subtitle color="dark" class="description">Caractéristiques de l'appartement</ion-card-subtitle>
+
+    <ion-card-subtitle class="descriptionSubtitle">
+
+      <div style="display: flex-wrap ; " *ngFor="let equipments of house.equipmentsList">
+        <p> <img class="icon-carac" src="{{equipments.pic}}" /> {{equipments.name}}</p>
+
+
+      </div>
+
+    </ion-card-subtitle>
+
+
+
+    <ion-card-subtitle color="dark" class="description">Les règles de l'appartement</ion-card-subtitle>
+
+    <ion-card-subtitle class="descriptionSubtitle">
+
+      <div style="display: flex-wrap ; " *ngFor="let rule of house.rules">
+        <p> <img class="icon-carac" src="{{rule.pic}}" /> {{rule.name}}</p>
+
+      </div>
+    </ion-card-subtitle>
+
+  </div>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="warning">
+        <ion-icon style="color: white;" name="chatbubbles-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="success">
+        <ion-icon name="call-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

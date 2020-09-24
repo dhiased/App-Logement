@@ -1,17 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+
+    <ion-title class="title">
+      Publier une annonce
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <hr color="#eef2f3" class="ion-margin">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <p class="chercher">Décrire votre chambre,<br>ou trouver un colocataire.</p>
+
+  <ion-card class="test mid">
+    <p>J'ai un appartement ou une chambre à louer</p>
+    <ion-icon name="home-outline"></ion-icon>
+    <div class="properties"></div>
+
+  </ion-card>
+
+  <ion-card class="test2 mid">
+    <p>Je cherche une chambre disponible ou une maison entière</p>
+    <ion-icon name="person-outline"></ion-icon>
+
+  </ion-card>
+
+  <img class="pub" src="../assets/publier.jpg" />
+
 </ion-content>

@@ -1,17 +1,78 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="container">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-text color="dark">
+    <h1 class="trouvez">Trouvez votre future logement</h1>
+  </ion-text>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-searchbar search-icon="search-outline" placeholder="  Où voulez-vous vivre ?">
+
+  </ion-searchbar>
+</div>
+
+<ion-content>
+
+  <!-- <div style="background-color:#F7F7FA ;">-->
+
+  <ion-card class="test mid" (click)="goToPageList()">
+    <p>cherchez un logement à votre guise</p>
+    <ion-icon name="bed-outline"></ion-icon>
+    <div class="properties"></div>
+
+  </ion-card>
+
+  <ion-card class="test2 mid" (click)="goToPageFlatemates()">
+    <p>Trouvez le colocataire idéal</p>
+    <!-- <div class="ion-text-end"> -->
+
+    <ion-icon name="people-outline"></ion-icon>
+
+    <!-- <ion-img class="properties" src="../assets/colocataire22.jpg"></ion-img> -->
+
+  </ion-card>
+  <hr color="#eef2f3" class="ion-margin">
+
+  <h6 class="villepop">Villes populaires</h6>
+
+
+  <div class="cards-list">
+
+    <div class="card 1">
+      <div class="card_image"> <img src="../assets/habib-bourguiba2.jpg" /></div>
+      <div class="card_title title-white">
+        <p>Tunis</p>
+      </div>
+    </div>
+
+    <div class="card 2">
+      <div class="card_image">
+        <img src="../assets/sousse2.jpg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Sousse</p>
+      </div>
+    </div>
+
+    <div class="card 3">
+      <div class="card_image">
+        <img src="../assets/mannouba.jpg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Mannouba</p>
+      </div>
+    </div>
+
+    <div class="card 4">
+      <div class="card_image">
+        <img src="../assets/sfax.jpg" />
+      </div>
+      <div class="card_title title-white">
+        <p>Sfax</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
 </ion-content>

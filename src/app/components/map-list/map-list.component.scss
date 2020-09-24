@@ -1,0 +1,76 @@
+.title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #F7F7FA;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato', sans-serif;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: -9px;
+
+
+}
+
+ion-toolbar {
+    --background: #F7F7FA;
+}
+
+
+.back-arrow {
+    color: #1280ee;
+    margin-left: 0px;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+
+.trouver {
+    margin-left: 60px;
+
+    font-size: 15px;
+    color: #434343;
+}
+
+.filtre {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.options {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #1280ee;
+}
+
+.secondFloor {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.list {
+    margin-right: 30px;
+}
+
+.trier {
+    margin-right: 30px;
+}
+
+#map {
+    height: 100%;
+
+}
+
+
+/*
+.map {
+    color: black;
+}
+
+.trier {
+    color: black;
+}*/

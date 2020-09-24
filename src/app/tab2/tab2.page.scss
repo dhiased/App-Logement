@@ -1,0 +1,32 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F7F7FA;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato', sans-serif;
+}
+
+
+ion-segment {
+
+    --icon-color: #3c4b62;
+    --background: #F7F7FA;
+    color: #3880ff;
+    /*color: rgb(34, 36, 40);*/
+
+}
+
+ion-toolbar {
+    --background: #F7F7FA;
+}
+
+ion-content {
+    --background: #F7F7FA;
+}
+
+.heart {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}

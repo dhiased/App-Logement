@@ -1,0 +1,214 @@
+.container {
+    /*  background-color: #F7F7FA;*/
+
+    background: #F7F7FA;
+
+
+}
+
+.test {
+    height: 190px;
+    /*background: linear-gradient(to right, #56ccf2, #2f80ed);*/
+    background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+.test2 {
+    height: 165px;
+    background: linear-gradient(to left, #00c6ff, #0072ff);
+    /*background: linear-gradient(to right, #000046, #1cb5e0);*/
+}
+
+ion-icon {
+    color: white;
+    font-size: 64px;
+    padding: 20px;
+}
+
+/*.properties {}*/
+
+.trouvez {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 45px;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato',
+        sans-serif;
+
+}
+
+ion-searchbar {
+    --placeholder-color: #3c4b62;
+    --icon-color: #3c4b62;
+    --background: rgb(255, 255, 255);
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px 0px,
+        rgba(0, 0, 0, 0.08) 0px 1px 3px 0px;
+
+    --color: -internal-light-dark-color(black, white);
+
+
+}
+
+
+
+
+
+
+.mid p {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 20px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1.5rem;
+
+}
+
+/*
+.firsttwo {
+
+    background-size: cover;
+
+    margin: 10px 0 0 10px;
+    position: relative;
+
+
+}
+
+
+.secondtwo {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.secondimg {
+
+
+    width: calc(33% - 2rem);
+    min-width: calc(33% - 2rem);
+    height: 400px;
+    min-height: 400px;
+    perspective: 1000px;
+    margin: 1rem;
+    position: relative;
+}
+
+.secondtwo h5 {
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0.5rem;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px auto;
+    width: 150px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1.2px rgba(0, 0, 0, 0.25), -1px -1px 6px 1.2px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+}
+
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -80px;
+    height: 40px;
+}
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 2.5px 2.5px 15px 7px rgba(0, 0, 0, 0.25),
+        -2.5px -2.5px 15px 7px rgba(0, 0, 0, 0.22);
+}
+
+.title-white p {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.title-black {
+    color: white;
+    top: 50%;
+    left: 50%;
+}
+
+@media all and (max-width: 500px) {
+    .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
+
+
+/*
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  transition: 0.4s;
+}
+*/
+
+.villepop {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+    font-family: 'Lato',
+        sans-serif;
+}
+
+ion-content {
+    --background: #F7F7FA;
+}

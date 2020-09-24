@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <div style="display: flex;">
+
+      <!-- <ion-icon class="back-arrow" name="arrow-back-circle"></ion-icon>-->
+      <ion-button (click)="goBackToPageTab1()" size="small" fill="clear" style="margin-left: 0; margin-right: 0px;">
+        <ion-icon class="back-arrow" name="arrow-back"></ion-icon>
+      </ion-button>
+      <ion-title class="title"> Toute la Tunisie </ion-title>
+      <ion-button fill="clear">
+        <ion-icon class="options" name="options"></ion-icon>
+        <ion-text class="filtre">Filtre</ion-text>
+      </ion-button>
+    </div>
+
+
+    <ion-text class="trouver">150600 trouvées</ion-text>
+
+    <hr color="#eef2f3" style="margin-bottom: -2px;">
+
+    <div class="secondFloor">
+
+      <ion-button (click)="goToPageMaplist()" color="dark" fill="clear">
+        <ion-icon class="map" name="map"> </ion-icon>
+        <ion-text class="m1"> Map</ion-text>
+      </ion-button>
+
+      <ion-button class="b2" color="dark" fill="clear">
+        <ion-icon class="trier" name="swap-vertical"></ion-icon>
+        <ion-text class="t1">Trier par</ion-text>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <!-- <ion-slides> 
+    <ion-slide> -->
+  <ion-card *ngFor="let house of houses">
+
+
+    <ion-slides>
+
+
+      <ion-slide *ngFor="let pic of house.imagesUrls">
+
+        <img src="{{pic}}" (click)="presentModal(house)" />
+
+      </ion-slide> <!-- -->
+
+    </ion-slides>
+
+    <ion-item>
+      <ion-icon name="cash-outline" slot="start"></ion-icon>
+      <ion-card-title>{{house.price}} DT/Mois</ion-card-title>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="home-outline" slot="start"></ion-icon>
+      <ion-label>S+ {{house.rooms}}</ion-label>
+      <ion-item lines="none">
+        <ion-icon name="scan-outline" slot="start"></ion-icon>
+        <ion-label>{{house.surface}} m2</ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+
+      <ion-label>{{house.street}}</ion-label>
+    </ion-item>
+
+
+  </ion-card>
+
+
+
+</ion-content>
